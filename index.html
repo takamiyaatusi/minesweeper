@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSweeper</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+	<div class="layout_main">
+		<div id="game_console" class="layout_main_child">
+			<div id="timer">00:00</div>
+			<button id="new_game">NEW GAME</button>
+			<button id="setting">setting</button>
+		</div>
+		<div id="canvas_area" class="layout_main_child">
+			<canvas width="300" height="300" id="main_canvas" class="layout_main_child"></canvas>
+			<canvas width="300" height="300" id="animation_canvas" class="layout_main_child hide"></canvas>
+		</div>
+	</div>
+	<div id="modal_area" class="hide">
+		<div id="modal">
+			<div id="difficulty">
+				<h2>Difficulty</h2>
+				<select id="difficulty_select">
+					<option value="1">EASY</option>
+					<option value="2">REGULAR</option>
+					<option value="3">HARD</option>
+				</select>
+				<button id="apply">Apply</button>
+			</div>
+			<div id="highscore">
+				<h2>High Score</h2>
+				<h3>EASY</h3>
+				<ul id="ranking_easy"></ul>
+				<h3>REGULAR</h3>
+				<ul id="ranking_regular"></ul>
+				<h3>HARD</h3>
+				<ul id="ranking_hard"></ul>
+			</div>
+		</div>
+		<div id="modal_back"></div>
+	</div>
+    <!-- <script>let exports = {};</script> -->
+</body>
+<script src="./dist/index.js"></script>
+</html>
