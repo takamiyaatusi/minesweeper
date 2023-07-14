@@ -1,6 +1,7 @@
 # 概要
 
 * 昔懐かしいマインスイーパです。
+ * <a href="https://takamiyaatusi.github.io/minesweeper/">GitHub Pages</a>で公開しました。
 * ランキング機能はありますが、セッションやlocalStorageすら使っておらず、リロードしたら消えます。
 
 <img src="./playing.png" alt="サンプル画像" title="サンプル画像">
