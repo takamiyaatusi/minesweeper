@@ -41,13 +41,12 @@ jobs:
       - name: Build
         run: npm run build --if-present
         working-directory: ./src
+      - name: Move
+        run: mkdir ./build && cp ./index.html ./build/index.html && cp ./main.css ./build/main.css && cp -r ./dist/ ./build/dist/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: |
-            ./index.html
-            ./main.css
-            ./dist/
+          path: ./build
   # Deployment job
   deploy:
     environment:
