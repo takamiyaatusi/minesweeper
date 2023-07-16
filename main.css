@@ -20,6 +20,9 @@ div.layout_main {
 .layout_main_child{
 	align-self: center;
 }
+.description{
+	margin-top: 40px;
+}
 #game_console {
 	border: 1px solid #ddd;
 	padding: 10px 0;
